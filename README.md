@@ -52,6 +52,12 @@ npx skills add ecubus/ecubus-skills --skill ecubus-cli-test -a cursor -g -y
 
 **适用场景：** 写/改 `.ecb` 工程里的测试节点脚本、CAN/LIN/UDS 请求响应测试、`ecb_cli test`。
 
+### ecubus-panel
+
+设计/编辑/调试 EcuBus-Pro Panel（自由布局面板）：控件类型与属性、组/标签页容器、DBC/LDF 信号与变量绑定、HTML 控件 `window.panel` API、按钮动作、记住值/初始值、旧版面板迁移。
+
+**适用场景：** 搭建或修复 Panel、直接编辑 `.ecb` 中的 `data.panels`、把控件接到信号/变量、编写 HTML 控件脚本、参考 `panel_showcase` / `panel_html` 示例。
+
 ## 仓库结构
 
 ```
@@ -59,9 +65,13 @@ ecubus-skills/
 ├── README.md
 ├── skills.sh.json          # skills.sh 分组元数据（可选）
 └── skills/
-    └── ecubus-cli-test/
-        ├── SKILL.md        # 主说明（必填）
-        └── patterns.md     # 常用测试模式
+    ├── ecubus-cli-test/
+    │   ├── SKILL.md        # 主说明（必填）
+    │   └── patterns.md     # 常用测试模式
+    └── ecubus-panel/
+        ├── SKILL.md        # Panel 架构、绑定、运行时、HTML、迁移
+        ├── reference.md    # 控件字段/默认值/绑定兼容表
+        └── patterns.md     # JSON 配方、HTML 脚本、节点脚本联动、排错
 ```
 
 后续新增 skill：在 `skills/<skill-name>/` 下创建带 YAML frontmatter 的 `SKILL.md`，并更新本 README 与 `skills.sh.json`。
