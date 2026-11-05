@@ -6,6 +6,11 @@
       "title": "EcuBus Testing",
       "description": "Skills for writing and running EcuBus-Pro CLI/HIL test scripts.",
       "skills": ["ecubus-cli-test"]
+    },
+    {
+      "title": "EcuBus Panel",
+      "description": "Skills for designing, binding and debugging EcuBus-Pro free-layout Panels and HTML controls.",
+      "skills": ["ecubus-panel"]
     }
   ]
 }
